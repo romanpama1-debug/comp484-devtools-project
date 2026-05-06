@@ -135,4 +135,3 @@ function debugExample() {
   console.log("Debug sum:", sum);
 }
 debugExample();
-for (let i = 0; i < 1000000000; i++) {}
