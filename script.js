@@ -99,3 +99,39 @@ function updatePetInfoInHtml() {
   $('.weight').text(pet_info.weight);
   $('.happiness').text(pet_info.happiness);
 }
+
+// Message Logging
+console.log("Pet initialized:", pet_info);
+console.info("Info: Pet system running");
+console.warn("Warning: Happiness might go too low");
+console.error("Error example (for demo)");
+
+// Log Table
+console.table([pet_info]);
+
+// Log Group
+console.group("Pet Debug Info");
+console.log("Name:", pet_info.name);
+console.log("Weight:", pet_info.weight);
+console.log("Happiness:", pet_info.happiness);
+console.groupEnd();
+
+// Custom Log
+console.log("%cGiga Pet Active", "color: purple; font-size: 16px;");
+
+// TypeError (intentional for assignment)
+let broken = null;
+try {
+  console.log(broken.name);
+} catch(e) {
+  console.error("Caught TypeError:", e);
+}
+
+// Debugging Function
+function debugExample() {
+  let a = 5;
+  let b = 10;
+  let sum = a + b;
+  console.log("Debug sum:", sum);
+}
+debugExample();
